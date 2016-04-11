@@ -36,14 +36,14 @@ We repeated this experiment for carrier frequencies in the range
 
 
 The reconstruction peak-to-peak voltage profile is expected to take the form of
-a \texttt{sinc(x)} function about the antenna~\cite{lerosey-focusing}.
+a \texttt{|sinc(x)|} function about the antenna~\cite{lerosey-focusing}.
 %
 Thus, the following equation is proposed to predict $V(x)$, the maximum
 peak-to-peak voltage from a given reconstruction, as a function of $x$, the
 distance between the reconstruction focal point and the receiver:
 %
 \begin{equation}\label{eq:vx}
-V(x)=a\cdot sinc\left(\frac{x+c}{b}\right)+d\,,
+V(x)=a\cdot \left|sinc\left(\frac{x+c}{b}\right)\right|+d\,,
 \end{equation}
 %
 \noindent where $a$ is the maximum peak-to-peak reconstruction amplitude, $b$ is
@@ -54,7 +54,7 @@ antenna along the $x$-axis, and $d$ is the noise-level offset voltage.
 
 Since $b$ is proportional to the wavelength (and inversely proportional to
 frequency), as the carrier frequency is increased, $\frac{1}{b}$ also increases,
-causing the ``bubble'' of the \texttt{sinc} function in
+causing the ``bubble'' of the \texttt{|sinc(x)|} function in
 Fig.~\ref{fig:freq_profile} to get smaller.
 %
 This relationship is shown explicitly in the inset of
@@ -81,7 +81,7 @@ voltage multiplier used in scaling.
 \includegraphics[width=\columnwidth]{figs/fit.pdf}
 \caption{Measured peak-to-peak voltage amplitude of reconstructions received in the
 vicinity of a time-reversed wave collapse location with a 5 GHz carrier
-frequency, and fit to the \texttt{sinc(x)} function.}
+frequency, and fit to the \texttt{|sinc(x)|} function.}
 \label{fig:error_fit}
 \end{figure}
 
@@ -124,10 +124,10 @@ frequency of 5~GHz, $t_d$ of 7~seconds, and $t_c$ of 39.8~seconds.
 
 Based on the results from Section~\ref{sec:spatial}, the peak-to-peak
 reconstruction voltage measured by the receiver is expected to decay according
-to the \texttt{sinc(x)} function as the receiver moves away from the
+to the \texttt{|sinc(x)|} function as the receiver moves away from the
 reconstruction focal point.
 %
-This \texttt{sinc(x)} function will be centered on the position where the sona
+This \texttt{|sinc(x)|} function will be centered on the position where the sona
 was last collected, making the reconstruction focus continually lag behind the
 antenna.
 %
@@ -144,7 +144,7 @@ velocity $\bar{v}$:
   V(t) = \left\{
         \begin{array}{lr}
                 0 & : t\pmod{t_c} \le t_d \\
-                a\cdot sinc(\frac{\bar{v}t}{b})+d & : t\pmod{t_c} > t_d
+                a\cdot \left|sinc\left(\frac{\bar{v}t}{b}\right)\right|+d & : t\pmod{t_c} > t_d
         \end{array}\,.
   \right.
 \end{equation}
