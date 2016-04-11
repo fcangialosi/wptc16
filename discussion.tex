@@ -1,0 +1,84 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Discussion}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Bandwidth and Target Velocity}
+\label{sec:bandwidth}
+
+
+In the above experiments, we found that the spatial distribution of the
+reconstruction \texttt{sinc(x)} function was dependent on the wavelength used,
+as expected.
+%
+The varying reconstruction amplitudes at different wavelengths are due to
+variations in the antenna coupling efficiency with frequency.
+%
+The results show that the time reversal process is remarkably broadband, making
+it very attractive for multi-band or spread-spectrum WPT applications.
+%
+Of course any WPT system utilizing time reversal will have to account for the
+finite-size bubble of fields around the main reconstruction point.
+%
+Methods have been devleoped to improve the spatial focusing of reconstructions
+well below the diffraction limit~\cite{lerosey-focusing}.
+
+
+
+Based on the results shown in Fig.~\ref{fig:moving_recon}, we would further
+expect the reconstruction amplitude to vary over a wider range as the velocity
+of the target increases
+%
+Nevertheless we believe one of the main advantages of time reversal over
+existing WPT methods is its ability to track moving
+targets~\cite{fink,nltr-wave-chaotic}.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Limitations and Future Work}
+\label{sec:limitations}
+
+
+These experiments were limited primarily by the environment and equipment used
+for testing.
+%
+A consumer electronics environment is likely to be much larger than the chamber
+used in this study, and filled with clutter.
+%
+Both of these properties would improve the modal density of the environment,
+creating more transmission channels between source and target, ultimately
+improving reconstruction quality.
+%
+On the other hand, such environments would likely have significantly larger loss
+than those considered in our experiments.
+
+
+
+%Our results show that time reversal mirrors may be able to effectively
+%exploit multiple channels, but we leave this to future work.
+%Great benefit can also be achieved by utilizing multi-channel time reversal mirrors.
+%Understanding how
+%to maximize the effectiveness of these technologies while minimizing cost is
+%critical.
+
+
+
+The single-channel time reversal method is limited in the amount of power it can
+transmit to a target.
+%
+It is certainly sufficient to perform long-term trickle charging or to act as a
+secondary-source of energy extending battery life.
+%
+A multi-channel realization of time reversal will be able to deliver much
+greater time-integrated power.
+
+
+
+The theoretical limit for the speed of the time reversal process needs to be
+determined.
+%
+These experiments were severely limited by the processing time of the combined
+MATLAB-DSO-AWG-PSG test and measurement system.
+%
+Dedicated hardware and firmware would eliminate communication overhead and thus
+dramatically improve the speed of the WPT process presented here.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

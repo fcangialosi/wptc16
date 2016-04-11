@@ -1,0 +1,102 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{introduction}
+\label{sec:intro}
+
+Many techniques have been proposed for wireless power transfer (WPT)
+ranging from magnetic resonance to microwave beaming.
+%
+While the ability to transmit power practically and efficiently at short to
+mid-range is well demonstrated in the literature, there is relatively little
+prior work that retains both high efficiency and practicality at distances
+beyond a few meters~\cite{wpt-progress}.
+
+
+
+Traditional methods of long-range WPT have relied on microwave
+beaming~\cite{history-wpt}.
+%
+While efficient, this technique requires precise alignment of transmitter and
+receiver, and requires a clear line of sight propagation path.
+%
+Even in those cases where line of sight might be achievable, it is highly
+impractical due to the danger it introduces to any humans or wildlife that might
+cross its path.
+%
+Finding a way to transmit microwave power over long distances in a less 
+concentrated transmission channel would be highly desirable.
+
+
+
+Magnetic resonance beacons have been used to extend magnetic resonance coupling
+to longer distances.
+%
+While safer than microwave beaming, these beacons still have a relatively
+limited range~\cite{wpt-progress}.
+%
+There is also interest in MIMO (Multiple Input Multiple Output) charging devices
+that allow for combined data and energy transfer using microwaves.
+%
+The proposed Cota system, for example, is able to wirelessly transmit power via
+a form of magnetic-beamforming~\cite{mimo}.
+%
+Other methods, such as Energous' WattUp, apply phase conjugation to the
+microwave signal~\cite{wattup}, although this method suffers from bandwidth
+limitations in general~\cite{prada-mirror,derode-mult}.
+%
+The efficiency and reliability of these techniques has yet to be fully explored
+in the literature.
+
+
+
+In this paper, direct time reversal is proposed as a potential alternative to
+the methods described above.
+%
+The method is especially well suited to ray chaotic environments, which are
+quite commonly found in settings where WPT technology is desired~\cite{hemmady}.
+%
+The source sends weak signals through many different trajectories in the
+scattering environment, spread out over an extended time period.
+%
+However, all of these signals converge on to the target location where they
+superimpose coherently at one instant to deliver a large burst of power.
+%
+As a result energy is concentrated only at the location of the intended target,
+and the limitations of microwave beaming are avoided.
+
+
+
+While there exists extensive prior work on electromagnetic time
+reversal~\cite{fink,nltr-wave-chaotic,nltr-classical-waves,tr-green}, it remains
+largely unexplored in the context of WPT\@.
+%
+For the technique to be viable, reconstructions must converge on a small point,
+without interfering with nearby electronics or biological matter.
+%
+Here we employ a very elementary single-channel time reversal mirror to
+accomplish this task and thereby demonstrate the principle of WPT.
+
+
+
+The primary advantage of time reversal in the context of wireless power transfer
+is its ability to locate a target object anywhere in an enclosed space, well
+beyond the meter scale between source and
+receiver~\cite{fink,nltr-wave-chaotic}.
+%
+This overcomes the main distance limitation imposed by the technologies relying
+on magnetic near fields.
+
+
+
+This paper explores the ability of time reversal to focus energy on a point in
+space.
+%
+The size of the reconstruction region on the target is quantified, and a fit to
+the spatial distribution of energy is introduced as a function of carrier signal
+wavelength.
+%
+Time reversed energy collapse is demonstrated on a moving target, and a model is
+similarly generated describing the energy delivered to the moving system.
+%
+These models are defined in terms of the parameters of the system and the
+theoretical bounds are discussed.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
