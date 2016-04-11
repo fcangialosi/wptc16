@@ -1,28 +1,27 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Discussion}
+\label{sec:discussion}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Proposed TR WPT System}
-\label{sec:WPTSys}
+\label{sec:system}
 
 This research is part of an exploration of time reversal applied to WPT applications. Our proposed WPT system is shown in Fig.~\ref{fig:SysImage}. This research investigates one particular performance parameter of the system. However, many unknowns regarding the design and performance of the TR WPT system remain.
 
-\begin{figure}[t!]
-\includegraphics[width=\columnwidth]{figs/WPTSys.png}
-\caption{The proposed time reversal system. The system begins by detecting a sona from a valid target (1). The sona is time-reversed (2) and broadcast back into the environment (3). The signal reconstructs on the receiver, which rectifies the energy (4).  A small amount of the energy is used to broadcast a new signal (5) into the environment (6) and the cycle repeats.}
-\label{fig:SysImage}
-\end{figure}
 
 \ph{Bulleted List for the paragraphs below?}
 
-The proposed TR WPT system has three basic components. The first is a rectenna that serves as the receiver of the WPT system. ~\cite{nltr-wave-chaotic} and ~\cite{ROMAN} \ph{Fix citations. Are we allowed to cite Scott?} demonstrate how individual receivers in a group can be focused on.
+The proposed TR WPT system has three basic components. The first is a rectenna
+that serves as the receiver of the WPT system. Prior work has shown how a
+transmitter can target individual receivers without the need for an out-of-band
+feedback loop~\cite{nltr-wave-chaotic,roman}.
 
 The second system component is a transmitter that performs the time reversal process.  This system will detect the identify signals from the receiver(s), time reverse the signals, and broadcast them. \ph{Awkward wording}  How the processing speed of identification and time reversal affects system performance is the main focus of this research.
 
 Time reversal is heavily dependent on environmental factors.  Thus, the environment should be considered a component in the design of a TR WPT system.  TR must occur in a low-loss, scattering environment for effective WPT to be possible.
 
 \subsection{Contributions and Future Work}
-\label{sec:Contrib}
+\label{sec:contrib}
 \ph{Is this too tacky a subsection?}
 
 In the above experiments, we demonstrate the shape of the spatial profile of electromagnetic
@@ -44,10 +43,16 @@ Nevertheless we believe one of the main advantages of time reversal over
 existing WPT methods is its ability to track moving
 targets~\cite{fink,nltr-wave-chaotic}.
 
+
+\begin{figure}[t]
+\includegraphics[width=\columnwidth]{figs/WPTSys.png}
+\caption{The proposed time reversal system. The system begins by detecting a sona from a valid target (1). The sona is time-reversed (2) and broadcast back into the environment (3). The signal reconstructs on the receiver, which rectifies the energy (4).  A small amount of the energy is used to broadcast a new signal (5) into the environment (6) and the cycle repeats.}
+\label{fig:SysImage}
+\end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{}
+\subsection{Limitations}
 \label{sec:limitations}
 
 
