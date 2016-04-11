@@ -2,28 +2,50 @@
 \section{Discussion}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Bandwidth and Target Velocity}
-\label{sec:bandwidth}
+\subsection{Proposed TR WPT System}
+\label{sec:WPTSys}
 
+This research is part of an exploration of time reversal applied to WPT applications. Our proposed WPT system is shown in Fig.~\ref{fig:SysImage}. This research investigates one particular performance parameter of the system. However, many unknowns regarding the design and performance of the TR WPT system remain.
 
-In the above experiments, we found that the spatial distribution of the
-reconstruction \texttt{|sinc(x)|} function was dependent on the wavelength used,
-as expected.
-%
-The varying reconstruction amplitudes at different wavelengths are due to
-variations in the antenna coupling efficiency with frequency.
-%
-The results show that the time reversal process is remarkably broadband, making
-it very attractive for multi-band or spread-spectrum WPT applications.
-%
-Of course any WPT system utilizing time reversal will have to account for the
-finite-size bubble of fields around the main reconstruction point.
-%
-Methods have been devleoped to improve the spatial focusing of reconstructions
-well below the diffraction limit~\cite{lerosey-focusing}.
+\begin{figure}[t!]
+\includegraphics[width=\columnwidth]{figs/WPTSys.png}
+\caption{The proposed time reversal system. The system begins by detecting a sona from a valid target (1). The sona is time-reversed (2) and broadcast back into the environment (3). The signal reconstructs on the receiver, which rectifies the energy (4).  A small amount of the energy is used to broadcast a new signal (5) into the environment (6) and the cycle repeats.}
+\label{fig:SysImage}
+\end{figure}
 
+\todo{Bulleted List for the paragraphs below?}
 
+The proposed TR WPT system has three basic components. The first is a rectenna that serves as the receiver of the WPT system. ~\cite{FRAZIER} and ~\cite{ROMAN} \todo{Fix citations. Are we allowed to cite Scott?} demonstrate how individual receivers in a group can be focused on.
 
+The second system component is a transmitter that performs the time reversal process.  This system will detect the identify signals from the receiver(s), time reverse the signals, and broadcast them. \todo{Awkward wording}  How the processing speed of identification and time reversal affects system performance is the main focus of this research.
+
+Time reversal is heavily dependent on environmental factors.  Thus, the environment should be considered a component in the design of a TR WPT system.  TR must occur in a scattering environment to work effectively.  A low-loss system is also necessary to maximize the transfer efficiency. We found that approximately X\% of energy \todo{GET THIS NUMBER} transmitted through our test cavity was lost due to environmental factors. Some environmental modifications will be need to be made during the installation of a TR WPT system.
+
+\subsection{Contributions}
+\label{sec:Contrib}
+\todo{Is this too tacky a subsection?}
+
+In the above experiments, we demonstrate the shape of the spatial profile of electromagnetic
+TR. This profile takes the form \texttt{|sinc(x)|}, dependent on wavelength $b$.
+Additionally, the ability of a TR system to transmit energy to a moving target is 
+demonstrated to be dependent on this profile, and the transmission dead 
+time of $t_{d}$.
+
+Any WPT system utilizing time reversal will have to account for the 
+finite-size bubble of fields around  the  main  reconstruction  point.
+Methods  have  been developed  to  improve  the  spatial  focusing  of  reconstructions
+well below the diffraction limit [11].
+
+The team’s experimental TR system is not optimized for downtime; currently a
+single TR operation takes approximately 7 seconds.  However, the researchers 
+believe that this number can be significantly improved in a finalized TR WPT 
+system, allowing for effective power transfer at speeds must faster than those 
+considered here.
+
+Additionally, we propose that understanding and characterizing how environmental 
+factors impact TR is a major obstacle to the design of a TR WPT system. Environmental
+effects should be a major research priority accordingly.
+\
 Based on the results shown in Fig.~\ref{fig:moving_recon}, we would further
 expect the reconstruction amplitude to vary over a wider range as the velocity
 of the target increases
