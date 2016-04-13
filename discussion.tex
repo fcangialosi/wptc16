@@ -3,23 +3,23 @@
 \label{sec:discussion}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Proposed TR WPT System}
+\subsection{Proposed Time Reversal WPT System}
 \label{sec:system}
 
-This research represents a first step in the exploration of a WPT system based on TR. We propose a proof-of-concept system in Fig.~\ref{fig:SysImage}. In this work, we investigated one particular performance parameter of the system. However, many unknowns regarding the design and performance of a complete system remain.
+This research represents a first step in the exploration of a WPT system based on time reversal. We propose a proof-of-concept system in Fig.~\ref{fig:SysImage}. In this work, we investigated one particular performance parameter of the system. However, many unknowns regarding the design and performance of a complete system remain.
 
 The proposed system has two basic components. The first is a rectenna that serves as the receiver. Although the system as described in Section~\ref{sec:meth} would require an out-of-band feedback channel between the receiver and transmitter, prior work has shown how a transmitter can target  receivers entirely in-band~\cite{nltr-wave-chaotic,roman}. Our system in Fig.~\ref{fig:SysImage} builds on these findings.
 
 The second component is a transmitter that performs the time reversal process. This system will record identifying signals from the receiver(s), time reverse the signals, and re-broadcast them into the environment.
 
-Although not a component of the system, another important consideration in building a WPT system based on TR is the environment; a low-loss scattering environment is necessary for the technique to be effective.
+Although not a component of the system, another important consideration in building a WPT system based on time reversal is the environment; a low-loss scattering environment is necessary for the technique to be effective.
 
 \subsection{Contributions and Future Work}
 \label{sec:contrib}
 
 In the above experiments, we demonstrate the shape of the spatial profile of an electromagnetic
 time reversed collapse. This profile takes the form $\left|sinc(x)\right|$, dependent on wavelength $b$.
-Additionally, the ability of a TR system to transmit energy to a moving target is
+Additionally, the ability of a time reversal system to transmit energy to a moving target is
 demonstrated to be dependent on the spatial profile and transmission dead
 time $t_{d}$.
 
@@ -38,7 +38,7 @@ range~\cite{fink,nltr-wave-chaotic}.
 
 \begin{figure}[t]
 \includegraphics[width=\columnwidth]{figs/WPTSysAlt}
-\caption{A notional time reversal wireless power transfer system. In the acquistion phase, a new receiver joins the system by broadcasting or emitting a characteristic signal (0). Here, the receiver actively emits a signal, but it is also possible for the transmitter to find a passive target, as shown in~\cite{nltr-wave-chaotic}. In either case, the next sona that the transmitter collects will contain spatial information unique to the receiver's location (1). In the power transfer cycle, the sona is time reversed (2), amplified, and broadcast back into the environment. The amplified signal reconstructs on the receiver (3) and is converted to usable DC power by the rectifier (4). A small fraction of the signal is used to re-broadcast a new characteristic signal (5) into the environment, which will be collected in the next sona (6). The cycle repeats from (2).}
+\caption{A notional time reversal WPT system. In the acquistion phase, a new receiver joins the system by broadcasting or emitting a characteristic signal (0). Here, the receiver actively emits a signal, but it is also possible for the transmitter to find a passive target, as shown in~\cite{nltr-wave-chaotic}. In either case, the next sona that the transmitter collects will contain spatial information unique to the receiver's location (1). In the power transfer cycle, the sona is time reversed (2), amplified, and broadcast back into the environment. The amplified signal reconstructs on the receiver (3) and is converted to usable DC power by the rectifier (4). A small fraction of the signal is used to re-broadcast a new characteristic signal (5) into the environment, which will be collected in the next sona (6). The cycle repeats from (2).}
 \label{fig:SysImage}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
