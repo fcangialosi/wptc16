@@ -1,5 +1,7 @@
 paper.pdf
 archive/
+data/**/*.eps
+data/**/*.pdf
 
 ## Core latex/pdflatex auxiliary files:
 *.aux
