@@ -5,17 +5,17 @@ set key top left
 set xrange[-35:35]
 set yrange[0:*]
 
-a = 1.89054223
-b = 20.02295637
-c = -73.71134998
-d = 1.01111164
+a = 2.179207595
+b = 26.7216308233300
+c = -73.58166529
+d = 0.427666631
 sinc(x) = sin(x) / x
-f(x) = a*sinc((x+c)/b) + d
+f(x) = a*abs(sinc((x+c)/b)) + d
 
 set xlabel 'Position (mm)' 
 set ylabel 'Peak-to-Peak Voltage (V)'
 
-infile = '5ghz.out'
+infile = '5ghz_abs.out'
 
 plot \
 infile u (($0/10)-35):1:2 w yerrorbars pt 7 ps 0 lw 3 ti 'Error',\
