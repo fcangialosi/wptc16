@@ -48,9 +48,34 @@ transfer within an enclosed, reflective cavity (Fig.~\ref{fig:gigabox}): a
 trajectories more ergodic.
 %
 Ray chaos ensures that a propagating pulse will eventually reach every point in
-the environment, which insures that many transmission channels are
-simultaneously excited, and this improves reconstruction fidelity.
+the environment, which simultaneously excites many transmission channels
+and thus improves reconstruction fidelity.
+
+
+
+Two monopole antennas inject and extract electromagnetic signals from different
+points in the enclosure. A transmitting antenna is attached to the cavity wall
+opposite the receiving antenna.
 %
+The receiving antenna is attached to a panel that can move vertically with a
+total range of 70~mm.
+%
+Motion of the receiving antenna is achieved using an externally-mounted PI
+MikroMove \texttt{M-415.DG} translation stage and the enclosure remains sealed
+during the translation.
+
+
+
+All signals are created and broadcast
+using a \texttt{Tektronix AWG7052} arbitrary waveform generator feeding into an
+\texttt{Agilent E8267D} Vector PSG microwave source.
+%
+An \texttt{Agilent DSO91304A} digital storage oscilloscope is used to
+record waveforms of interest. MATLAB is used for signal processing,
+instrument control, and coordination.
+
+
+
 The basic time reversal process in this environment proceeds as follows: First,
 a 50~ns Gaussian pulse (with a carrier frequency of 5~GHz) is injected into
 the cavity through the transmitting antenna.
@@ -70,27 +95,4 @@ antenna (Fig.~\ref{fig:recon}).
 %
 This process makes use of another robust symmetry, namely the spatial
 reciprocity of the wave equation.
-
-
-
-Two monopole antennas inject and extract electromagnetic signals from different
-points in the enclosure. A transmitting antenna is attached to the cavity wall
-opposite the receiving antenna.
-%
-The receiving antenna is attached to a panel that can move vertically with a
-total range of 70~mm.
-%
-Motion of the receiving antenna is achieved using an externally-mounted PI
-MikroMove \texttt{M-415.DG} translation stage and the enclosure remains sealed
-during the translation.
-
-
-
-Interrogation pulses and time-reversed sona signals are created and broadcast
-using a \texttt{Tektronix AWG7052} arbitrary waveform generator feeding an
-\texttt{Agilent E8267D} Vector PSG microwave source.
-%
-A digital storage oscilloscope (DSO, \texttt{Agilent DSO91304A}) is used to
-record waveforms of interest. MATLAB is used for signal processing and
-instrument control and coordination.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
