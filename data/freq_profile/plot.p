@@ -47,7 +47,7 @@ set xtics font ",28"
 set ytics 0.00,0.04,0.08
 set ytics font ",28"
 
-plot (0.0086576666297972*x-0.0027770468547982) lc rgb "#3498db" lt 2 lw 7,\
+plot (0.008369621876241*x) lc rgb "#3498db" lt 2 lw 7,\
      'inset/b.out' u 1:(1/$2):(1/$3):(1/$4) w yerrorbars ps 2 lw 7 lt 4 notitle
 
 unset multiplot
