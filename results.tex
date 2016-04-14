@@ -8,6 +8,7 @@
 at carrier frequencies ranging from \numrange{4}{9}~GHz in 1~GHz
 steps. The inset shows the inverse of the fit $b$ value versus carrier
 frequency, showing the expected linear relationship. Note that the reconstruction amplitude varies with frequency as the antenna properties change.}
+\vspace{\baselineskip}
 \label{fig:freq_profile}
 \end{figure}
 
@@ -81,7 +82,7 @@ voltage multiplier used in scaling.
 \includegraphics[width=\columnwidth]{figs/fit.pdf}
 \caption{Measured peak-to-peak voltage amplitude of reconstructions received in the
 vicinity of a time reversed wave collapse location with a 5 GHz carrier
-frequency, and fit to Eq.~\ref{eq:vx}}
+frequency, and a fit to the $\left|sinc(x)\right|$ profile from Eq.~\ref{eq:vx}.}
 \label{fig:error_fit}
 \end{figure}
 
@@ -156,14 +157,11 @@ Eq.~\ref{eq:vt} to one full cycle. As in Fig.~\ref{fig:error_fit}, this
 function fits the data well using the same parameters.
 
 
-
 \begin{figure}[t]
 \centering
 \includegraphics[width=\columnwidth]{figs/moving_recon.pdf}
-\caption{Reconstruction voltage amplitude vs.\ time as the target moves along
-one wall of the enclosure. A new sona signal is acquired every $t_{c}=39.8$~seconds,
-leading to a dead time of duration $t_{d}=7$~seconds. The target is moving at a speed
-of 0.5~$\frac{mm}{s}$ and the carrier frequency is 5~GHz.}
+\caption{Peak-to-peak reconstruction voltage measured over time as the target moves along
+one wall of the enclosure at 0.5~$\frac{mm}{s}$. A new sona signal is acquired every $t_{c}$~seconds.}
 \label{fig:moving_recon}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
