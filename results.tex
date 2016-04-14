@@ -7,8 +7,7 @@
 \caption{Spatial profile of peak-to-peak voltage amplitudes of reconstructions
 at carrier frequencies ranging from \numrange{4}{9}~GHz in 1~GHz
 steps. The inset shows the inverse of the fit $b$ value versus carrier
-frequency, showing the expected linear relationship. Differences in amplitude
-are due to differences in $S_{1,2}$ parameters between frequencies for our particular antennas.}
+frequency, showing the expected linear relationship. Note that the reconstruction amplitude varies with frequency as the antenna properties change.}
 \label{fig:freq_profile}
 \end{figure}
 
@@ -41,7 +40,7 @@ a $\left|sinc(x)\right|$ function about the antenna~\cite{lerosey-focusing}.
 %
 Thus, the following equation is proposed to predict $V(x)$, the maximum
 peak-to-peak voltage from a given reconstruction, as a function of $x$, the
-distance between the reconstruction focal point and the receiver:
+distance between the reconstruction focal point and the translated receiver:
 %
 \begin{equation}\label{eq:vx}
 V(x)=a\cdot \left|sinc\left(\frac{x+c}{b}\right)\right|+d\,,
@@ -56,7 +55,7 @@ antenna along the $x$-axis, and $d$ is the noise-level offset voltage.
 Since $b$ is proportional to the wavelength (and inversely proportional to
 frequency), as the carrier frequency is increased, $\frac{1}{b}$ also increases,
 causing the main lobe of the $\left|sinc(x)\right|$ function in
-Fig.~\ref{fig:freq_profile} to get thinner.
+Fig.~\ref{fig:freq_profile} to narrow.
 %
 This relationship is shown explicitly in the inset of
 Fig.~\ref{fig:freq_profile}.
