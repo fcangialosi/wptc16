@@ -37,8 +37,8 @@ set label "t_d" at 40,1.05
 set label "t_c" at 25,0.75
 
 plot infile u ($1):($2) w p ps 1.5 pt 7 lc rgb "blue" notitle,\
-f(x) w li lw 9 ti 'V(t)',\
-g(x) w li lw 9 lt 2 notitle,\
-h(x) w li lw 9 lt 2 notitle,\
-i(x) w li lw 9 lt 2 notitle,\
-j(x) w li lw 9 lt 2 notitle
+f(x) w li lw 9 ti 'V(t)'
+#g(x) w li lw 9 lt 2 notitle,\
+#h(x) w li lw 9 lt 2 notitle,\
+#i(x) w li lw 9 lt 2 notitle,\
+#j(x) w li lw 9 lt 2 notitle
